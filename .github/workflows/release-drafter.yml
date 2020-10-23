@@ -13,4 +13,17 @@ jobs:
       - uses: release-drafter/release-drafter@v5.11.0
         name: Draft
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.VBEN_SECRETS }}
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Build and Deploy
+        uses: JamesIves/github-pages-deploy-action@master
+        env:
+            ACCESS_TOKEN: ${{ secrets.VITE_SECRETS }}
+            BRANCH: gh-pages
+            FOLDER: dist
+            BUILD_SCRIPT: npm install -g n && n v12.19.0 && node --version && yarn && yarn build
