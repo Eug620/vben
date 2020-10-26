@@ -1,0 +1,1 @@
+import{d as a,Z as r,c as s,u as t,o as e,j as n,l as u}from"./index.12c9c6d9.js";var c=a({setup(){const{currentRoute:a}=r();return{params:s((()=>t(a).params))}}});const o={class:"p-4"};c.render=function(a,r,s,t,c,p){return e(),n("div",o," Current Param : "+u(a.params),1)};export default c;
