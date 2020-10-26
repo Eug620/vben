@@ -1,6 +1,6 @@
 {
-  "name": "vben-admin-2.0",
-  "version": "2.0.0-rc.4",
+  "name": "vben",
+  "version": "0.0.0",
   "scripts": {
     "bootstrap": "yarn install || npm install",
     "serve": "cross-env ts-node --files -P  ./build/tsconfig.json ./build/script/preserve && cross-env NODE_ENV=development vite",
@@ -100,15 +100,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anncwb/vue-vben-admin.git"
+    "url": "git+https://github.com/eug620/vben.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/anncwb/vue-vben-admin/issues"
+    "url": "https://eug620.github.io/vben/issues"
   },
   "homepage": "https://eug620.github.io/vben",
   "changelog": {
-    "bugsUrl": "https://github.com/anncwb/vue-vben-admin/issues",
+    "bugsUrl": "https://eug620.github.io/vben/issues",
     "emojis": true,
     "authorName": false,
     "authorEmail": false
