@@ -1,4 +1,4 @@
-name: vite Demo
+name: vben
 on:
   push:
     branches:
@@ -16,4 +16,4 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.VBEN_SECRETS }}
         BRANCH: gh-pages
         FOLDER: dist
-        BUILD_SCRIPT: npm install -g n && n v12.19.0 && node --version && yarn && yarn build:vite
+        BUILD_SCRIPT: npm install -g n && n v12.19.0 && node --version && yarn && yarn build:vite && yarn build:no-cache
