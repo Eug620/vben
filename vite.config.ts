@@ -98,9 +98,9 @@ const viteConfig: UserConfig = {
   sourcemap: false,
   /**
    * 资源输出路径
-   * @default '_assets'
+   * @default 'assets'
    */
-  assetsDir: '_assets',
+  assetsDir: 'assets',
   /**
    * 静态资源小于该大小将会内联，默认4096kb
    * @default '4096'
